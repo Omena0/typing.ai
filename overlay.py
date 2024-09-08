@@ -32,12 +32,15 @@ frame.place_forget()
 
 def toggle_gui():
     global gui_shown
-    gui_shown = not gui_shown
-    if not gui_shown:
+    if gui_shown:
         frame.place_forget()
     else:
         frame.place_configure(x=0,y=0)
+        root.lift()
         tb.lift()
         tb.focus_set()
+        tb.focus_force()
+
+    gui_shown = not gui_shown
 
 kb.add_hotkey('tab',toggle_gui,suppress=True)

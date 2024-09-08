@@ -1,0 +1,8 @@
+keyboard
+ollama
+pyautogui
+subprocess
+webbrowser
+tkinter
+customtkinter
+screeninfo

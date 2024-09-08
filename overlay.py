@@ -37,5 +37,7 @@ def toggle_gui():
         frame.place_forget()
     else:
         frame.place_configure(x=0,y=0)
+        tb.lift()
+        tb.focus_set()
 
 kb.add_hotkey('tab',toggle_gui,suppress=True)

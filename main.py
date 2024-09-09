@@ -4,7 +4,7 @@ import overlay
 import ollama
 import pyautogui
 
-model = 'krtkygpta/gemma2_tools'
+model = 'allenporter/xlam:1b'
 
 system = r"""
 Use the tools provided to do what the user wants.
@@ -45,7 +45,7 @@ def generate(text:str|None):
     return ollama.chat(
         model,
         history,
-        options={"temperature": 1.25, "top_k": 65, "top_p": 0.8},
+        options={"temperature": 1.25, "top_k": 65, "top_p": 0.8, "n_ctx": len(system)+100},
         tools=tools_list,
         format='json'
     )

@@ -3,20 +3,20 @@ from screeninfo import screeninfo
 import keyboard as kb
 PAUSE = 0
 
-x = screeninfo.get_monitors()[0].width
-y = screeninfo.get_monitors()[0].height
+width = screeninfo.get_monitors()[0].width
+height = screeninfo.get_monitors()[0].height
 
-
+tki.set_appearance_mode('system')
 
 root = tki.CTk(fg_color='black')
 root.title('Typing.ai')
 root.wm_attributes("-transparentcolor", "black",'-topmost',True,'-fullscreen',True)
 root.overrideredirect(True)
-root.geometry(f'{x}x{y}')
+root.geometry(f'{width}x{height}')
 
 gui_shown = False
 
-frame = tki.CTkFrame(root,width=x,height=y,bg_color='black',fg_color='black',border_color='black')
+frame = tki.CTkFrame(root,width=width,height=height,bg_color='black',fg_color='black',border_color='black')
 frame.place(x=0,y=0)
 
 tb = tki.CTkEntry(
@@ -26,7 +26,7 @@ tb = tki.CTkEntry(
     corner_radius = 6,
     font = tki.CTkFont(size=20)
 )
-tb.place(x=x/3-135,y=y/3)
+tb.place(x=width/2-250,y=height/2-25)
 
 frame.place_forget()
 

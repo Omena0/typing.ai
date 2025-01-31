@@ -3,6 +3,8 @@
 
 Your day-to-day AI assistant
 
+# [DOWNLOAD](https://raw.githubusercontent.com/Omena0/typing.ai/refs/heads/main/dist/typing.ai_main.exe)
+
 ## Features:
 
 Custom command support for when waiting for an AI to respond is too slow

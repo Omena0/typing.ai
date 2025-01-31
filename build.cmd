@@ -12,9 +12,10 @@ py -m nuitka --standalone --enable-plugin=tk-inter^
  --include-data-files=src/system.md=system.md^
  --windows-icon-from-ico=src/resources/icon.png^
  --windows-console-mode=disable^
+ --lto=no^
  src/main.pyw
 
 rem mov to dist
 cd build
-tar -cf main.dist.zip main.dist
-move "main.dist.zip" "../dist/main.zip"
+powershell Compress-Archive main.dist main.zip
+move "main.zip" "../dist/main.zip"

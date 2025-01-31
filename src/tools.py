@@ -1,7 +1,7 @@
+from pyautogui import typewrite
+import tkinter.messagebox
 import subprocess
 import webbrowser
-import tkinter.messagebox
-from pyautogui import typewrite
 
 def run_command(command:str):
     command = command.strip()

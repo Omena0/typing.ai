@@ -39,4 +39,5 @@ def toggle_gui():
     gui_shown = not gui_shown
 
 def setKeybind(keybind):
-    kb.add_hotkey(keybind, toggle_gui, suppress=False)
+    root.bind('<Escape>',lambda e: toggle_gui())
+    kb.add_hotkey(keybind, toggle_gui, suppress=True)

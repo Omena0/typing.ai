@@ -1,0 +1,9 @@
+keyboard
+ollama
+pystray
+pyautogui
+AppOpener
+Pillow
+customtkinter
+screeninfo
+nuitka

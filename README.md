@@ -22,7 +22,7 @@ All run locally, works offline
 
 Customizable model and hotkey
 
-## Examples:
+## Examples (OUTDATED):
 
 ### Opening applications
 
